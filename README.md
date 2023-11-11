@@ -1,3 +1,3 @@
 # README
 
-Main repo of React Pro Course by Pun Pro
+Main repo of Next Pro Course by Pun Pro
