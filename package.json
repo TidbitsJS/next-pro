@@ -1,10 +1,14 @@
 {
   "name": "next-pro",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Next Pro course by Pun Pro",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "export": "node scripts/export.js",
+    "curriculum": "node scripts/curriculum.js",
+    "dev": "npm run export && npm run curriculum"
   },
   "author": "Tidbits JS",
   "license": "ISC",
@@ -15,5 +19,8 @@
   "homepage": "https://github.com/TidbitsJS/next-pro",
   "publishConfig": {
     "@tidbits.js:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
   }
 }
